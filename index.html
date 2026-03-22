@@ -2,7 +2,6 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Electricista en Chihuahua</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +18,16 @@
       <div class="container">
         <div class="brand">
           <h1>Servicios Eléctricos Puerta</h1>
-          <p>Electricista en Chihuahua | Cotización sin compromiso</p>
+          <p>Electricista en Chihuahua</p>
         </div>
-        <nav>
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="main-nav">
           <a href="#servicios">Servicios</a>
           <a href="#experiencia">Experiencia</a>
           <a href="#contacto">Contacto</a>
@@ -158,6 +164,33 @@
         }
 
         lastScrollTop = scrollTop;
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector("#main-nav");
+
+        // Verificamos si los elementos existen en la página
+        if (menuBtn && navMenu) {
+          menuBtn.addEventListener("click", function (e) {
+            e.preventDefault(); // Evita comportamientos extraños
+            navMenu.classList.toggle("active");
+            console.log("Menú clickeado, clase 'active' aplicada");
+          });
+
+          // Cerrar al hacer clic en un enlace (para que no tape la pantalla al navegar)
+          const links = navMenu.querySelectorAll("a");
+          links.forEach((link) => {
+            link.addEventListener("click", () => {
+              navMenu.classList.remove("active");
+            });
+          });
+        } else {
+          console.error(
+            "No se encontró el botón (.menu-toggle) o el menú (#main-nav)"
+          );
+        }
       });
     </script>
   </body>
