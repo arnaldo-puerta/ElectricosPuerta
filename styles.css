@@ -331,7 +331,6 @@ ul li {
 
 /* --- RESPONSIVO --- */
 @media (max-width: 768px) {
-  
   .container {
     flex-direction: column;
     gap: 20px;
@@ -339,6 +338,95 @@ ul li {
 
   .hero-content h2 {
     font-size: 2rem;
+  }
+}
+
+/* Estilos del botón hamburguesa (oculto en PC) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #facc15; /* Tu amarillo eléctrico */
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+
+  .container {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 25px; /* Ancho de la línea (puedes subirlo a 30px si las quieres más largas) */
+    height: 3px; /* Grosor de la línea */
+    background-color: #facc15; /* Tu amarillo eléctrico */
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* --- El resto se queda igual para que funcione el menú --- */
+
+  .brand h1 {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .brand p {
+    font-size: 0.7rem;
+    margin-top: -2px; /* Un pequeño ajuste para que no se separe tanto del h1 */
+  }
+
+  #main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1f2937;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #facc15;
+    z-index: 9999;
+  }
+
+  #main-nav.active {
+    display: flex !important;
+  }
+
+  #main-nav a {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    color: white;
+    text-decoration: none;
   }
 }
 
