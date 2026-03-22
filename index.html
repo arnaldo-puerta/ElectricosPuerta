@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electricista en Chihuahua</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="brand">
+          <h1>Servicios Eléctricos Puerta</h1>
+          <p>Electricista en Chihuahua | Cotización sin compromiso</p>
+        </div>
+        <nav>
+          <a href="#servicios">Servicios</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Servicio eléctrico rápido, seguro y a precio justo en Chihuahua</h2>
+        <p>
+          Instalaciones y reparaciones eléctricas en hogares y departamentos
+        </p>
+        <button class="btn-cotizar">Solicitar cotización</button>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <h2>¿Qué se ofrece?</h2>
+
+      <div class="contenedor-servicios">
+        <div class="servicio-card">
+          <h3>Instalaciones eléctricas</h3>
+          <p>Contactos, cableado e iluminación profesional para tu hogar.</p>
+        </div>
+
+        <div class="servicio-card">
+          <h3>Reparación de fallas</h3>
+          <p>
+            Solución rápida a cortos, apagones y problemas eléctricos urgentes.
+          </p>
+        </div>
+
+        <div class="servicio-card">
+          <h3>Trabajos en altura</h3>
+          <p>
+            Mantenimiento en postes y cableado exterior con máxima seguridad.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia">
+      <h2>Experiencia real</h2>
+      <p>
+        Electricista independiente con experiencia en casas, departamentos y
+        trabajos en postes. Servicio directo, sin intermediarios.
+      </p>
+    </section>
+
+    <!-- DIFERENCIADOR -->
+    <section>
+      <h2>¿Por qué elegir este servicio?</h2>
+      <ul>
+        <li>Precios accesibles</li>
+        <li>Cotización sin compromiso</li>
+        <li>Trabajo rápido</li>
+        <li>Atención directa</li>
+      </ul>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+
+      <p>¿Necesitas ayuda? Contáctanos ahora:</p>
+
+      <!-- BOTÓN WHATSAPP -->
+      <a href="https://w.app/tpyrlq" target="_blank">
+        <button>Enviar mensaje por WhatsApp</button>
+      </a>
+
+      <!-- TELÉFONO -->
+      <p>O llama directamente: 614-540-8352</p>
+
+      <!-- CORREO -->
+      <p>También puedes enviar un correo:</p>
+      <a href="mailto:electricospuerta@gmail.com">electricospuerta@gmail.com</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Servicios Eléctricos Puerta</h3>
+          <p>
+            Soluciones eléctricas seguras y profesionales para hogares en
+            Chihuahua. Calidad garantizada en cada conexión.
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Zona de Cobertura</h4>
+          <p>📍 Chihuahua, Chihuahua y zonas aledañas.</p>
+          <p>📞 614-540-8352</p>
+          <p>✉️ electricospuerta@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Servicios Eléctricos Puerta. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+    <script>
+      let lastScrollTop = 0;
+      const header = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+          // Si bajas y ya pasaste los primeros 100px, esconde el header
+          header.classList.add("header-hidden");
+        } else {
+          // Si subes (aunque sea un poco), muestra el header
+          header.classList.remove("header-hidden");
+        }
+
+        lastScrollTop = scrollTop;
+      });
+    </script>
+  </body>
+</html>
