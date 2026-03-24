@@ -3,196 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electricista en Chihuahua</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Barbería Elite | Cortes Profesionales</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <!-- HEADER -->
-    <header>
-      <div class="container">
-        <div class="brand">
-          <h1>Servicios Eléctricos Puerta</h1>
-          <p>Electricista en Chihuahua</p>
+    <header class="navbar">
+      <div class="container-header">
+        <div class="logo">
+          <h1>BARBERÍA</h1>
+          <span class="brand-name">ELITE</span>
+          <p class="tagline">CORTES MODERNOS, CLÁSICOS Y BARBA PROFESIONAL</p>
         </div>
 
-        <button class="menu-toggle" aria-label="Abrir menú">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav id="main-nav">
-          <a href="#servicios">Servicios</a>
-          <a href="#experiencia">Experiencia</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="header-info">
+          <div class="info-item location">
+            <span class="label">UBICACIÓN</span>
+            <span class="text">Chihuahua, Chih</span>
+          </div>
+          <a href="https://wa.me/tu-numero" class="btn-nav"
+            >RESERVAR POR WHATSAPP</a
+          >
+        </div>
       </div>
     </header>
 
-    <!-- HERO -->
-    <section id="hero" class="hero-section">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <h2>Servicio eléctrico rápido, seguro y a precio justo en Chihuahua</h2>
-        <p>
-          Instalaciones y reparaciones eléctricas en hogares y departamentos
-        </p>
-        <button class="btn-cotizar">Solicitar cotización</button>
-      </div>
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="servicios">
-      <h2>¿Qué se ofrece?</h2>
-
-      <div class="contenedor-servicios">
-        <div class="servicio-card">
-          <h3>Instalaciones eléctricas</h3>
-          <p>Contactos, cableado e iluminación profesional para tu hogar.</p>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Agenda tu corte en minutos, sin filas</h2>
+          <p>Atención profesional, resultados garantizados.</p>
+          <a href="#contacto" class="btn-main">RESERVAR AHORA</a>
         </div>
+      </section>
 
-        <div class="servicio-card">
-          <h3>Reparación de fallas</h3>
-          <p>
-            Solución rápida a cortos, apagones y problemas eléctricos urgentes.
-          </p>
+      <section class="gallery">
+        <h3>Mira algunos de nuestros trabajos</h3>
+        <div class="grid-gallery">
+          <div class="photo-placeholder">Corte 1</div>
+          <div class="photo-placeholder">Corte 2</div>
+          <div class="photo-placeholder">Corte 3</div>
         </div>
+      </section>
 
-        <div class="servicio-card">
-          <h3>Trabajos en altura</h3>
-          <p>
-            Mantenimiento en postes y cableado exterior con máxima seguridad.
-          </p>
+      <section class="services">
+        <h3>Nuestros Servicios</h3>
+        <div class="service-list">
+          <div class="service-item">
+            <span>Corte clásico</span>
+            <span>$150</span>
+          </div>
+          <div class="service-item">
+            <span>Fade / Moderno</span>
+            <span>$200</span>
+          </div>
+          <div class="service-item">
+            <span>Barba</span>
+            <span>$100</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- EXPERIENCIA -->
-    <section id="experiencia">
-      <h2>Experiencia real</h2>
-      <p>
-        Electricista independiente con experiencia en casas, departamentos y
-        trabajos en postes. Servicio directo, sin intermediarios.
-      </p>
-    </section>
+      <section class="location-info">
+        <h3>Visítanos</h3>
+        <p>Estamos en Chihuahua, fácil acceso.</p>
 
-    <!-- DIFERENCIADOR -->
-    <section>
-      <h2>¿Por qué elegir este servicio?</h2>
-      <ul>
-        <li>Precios accesibles</li>
-        <li>Cotización sin compromiso</li>
-        <li>Trabajo rápido</li>
-        <li>Atención directa</li>
-      </ul>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-      <h2>Contacto</h2>
-
-      <p>¿Necesitas ayuda? Contáctanos ahora:</p>
-
-      <!-- BOTÓN WHATSAPP -->
-      <a href="https://w.app/tpyrlq" target="_blank">
-        <button>Enviar mensaje por WhatsApp</button>
-      </a>
-
-      <!-- TELÉFONO -->
-      <p>O llama directamente: 614-540-8352</p>
-
-      <!-- CORREO -->
-      <p>También puedes enviar un correo:</p>
-      <a href="mailto:electricospuerta@gmail.com">electricospuerta@gmail.com</a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>Servicios Eléctricos Puerta</h3>
-          <p>
-            Soluciones eléctricas seguras y profesionales para hogares en
-            Chihuahua. Calidad garantizada en cada conexión.
-          </p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112063.15617631383!2d-106.16613305!3d28.6300484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43904533036f%3A0xe969018c642e1b!2sChihuahua%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1710000000000!5m2!1ses-419!2smx"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
+      </section>
 
-        <div class="footer-column">
-          <h4>Navegación</h4>
-          <ul>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
+      <footer id="contacto" class="cta-final">
+        <h3>¿Listo para un cambio de look?</h3>
+        <a href="https://wa.me/tu-numero" class="btn-whatsapp"
+          >RESERVA AHORA POR WHATSAPP</a
+        >
+        <p class="copyright">© 2026 Barbería Elite - Chihuahua, México</p>
+      </footer>
+    </main>
 
-        <div class="footer-column">
-          <h4>Zona de Cobertura</h4>
-          <p>📍 Chihuahua, Chihuahua y zonas aledañas.</p>
-          <p>📞 614-540-8352</p>
-          <p>✉️ electricospuerta@gmail.com</p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>
-          &copy; 2026 Servicios Eléctricos Puerta. Todos los derechos
-          reservados.
-        </p>
-      </div>
-    </footer>
     <script>
       let lastScrollTop = 0;
-      const header = document.querySelector("header");
+      const navbar = document.querySelector(".navbar");
 
-      window.addEventListener("scroll", function () {
-        let scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
+      window.addEventListener(
+        "scroll",
+        function () {
+          let scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
 
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-          // Si bajas y ya pasaste los primeros 100px, esconde el header
-          header.classList.add("header-hidden");
-        } else {
-          // Si subes (aunque sea un poco), muestra el header
-          header.classList.remove("header-hidden");
-        }
+          if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Si bajas y ya pasaste los primeros 100px, oculta el header
+            navbar.classList.add("header-hidden");
+          } else {
+            // Si subes, muestra el header
+            navbar.classList.remove("header-hidden");
+          }
 
-        lastScrollTop = scrollTop;
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuBtn = document.querySelector(".menu-toggle");
-        const navMenu = document.querySelector("#main-nav");
-
-        // Verificamos si los elementos existen en la página
-        if (menuBtn && navMenu) {
-          menuBtn.addEventListener("click", function (e) {
-            e.preventDefault(); // Evita comportamientos extraños
-            navMenu.classList.toggle("active");
-            console.log("Menú clickeado, clase 'active' aplicada");
-          });
-
-          // Cerrar al hacer clic en un enlace (para que no tape la pantalla al navegar)
-          const links = navMenu.querySelectorAll("a");
-          links.forEach((link) => {
-            link.addEventListener("click", () => {
-              navMenu.classList.remove("active");
-            });
-          });
-        } else {
-          console.error(
-            "No se encontró el botón (.menu-toggle) o el menú (#main-nav)"
-          );
-        }
-      });
+          // Actualizamos la posición para la siguiente comparación
+          lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        },
+        false
+      );
     </script>
   </body>
 </html>
